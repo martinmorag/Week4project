@@ -220,7 +220,7 @@
     background-color: gainsboro;
   }
 
-  /* form */
+  /* login and registration form */
   form {
     grid-column: 1 / 3;
     width: 500px;
@@ -260,6 +260,93 @@
   }
   input:required:valid {
     border-left: 5px solid rgb(33, 204, 33);
+  }
+
+  /* mangement*/
+  #add {
+    grid-column: 1 / 3;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .add_new {
+    text-decoration: none;
+    color: black;
+    padding: 7px 15px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: #EDFFEC;
+    margin: 20px;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  /* add classification form */
+  #addClassificationForm fieldset {
+    border: 3px solid gray;
+    background-color: #EDFFEC;
+    display: flex;
+    flex-direction: column;
+  }
+  .add {
+    display: flex;
+    flex-direction: column;
+  }
+  #add-classif {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .add_info {
+    width: 250px;
+    margin: 0 auto;
+    color: #69140E;
+  }
+  .addButton {
+    margin: 20px;
+    font-size: 17px;
+    width: 200px;
+    padding: 5px 0;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px auto;
+    font-weight: bold;
+  }
+
+  /* add vehicle form */
+  #addVehicleForm fieldset {
+    border: 3px solid gray;
+    background-color: #EDFFEC;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  .add {
+    display: flex;
+    flex-direction: column;
+  }
+  #classification_id {
+    font-size: 17px;
+  }
+  .add input, #classification_id {
+    width: 250px;
+    margin: 10px auto;
+  }
+  .add textarea {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .addButton {
+    margin: 20px;
+    font-size: 17px;
+    width: 200px;
+    padding: 5px 0;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px auto;
+    font-weight: bold;
   }
 
   /* Footer */
@@ -303,10 +390,12 @@
   nav ul {
     display: flex;
     justify-content: space-between;
+    padding: 0;
   }
   nav li {
     list-style-type: none;
-    margin: 11px 15px 0 0;
+    margin: 10px 5px 0 5px;
+    font-size: 14px;
   }
   nav a {
     text-decoration: none;
@@ -496,6 +585,116 @@
   .mechanic, .description, .miles {
     background-color: gainsboro;
   }
+
+  /* input validation */
+
+  input:required:invalid, input:focus:invalid {
+    border-left: 3px solid red;
+  }
+  input:required:valid {
+    border-left: 3px solid rgb(33, 204, 33);
+  }
+
+  /* mangement*/
+  #add {
+    grid-column: 1 / 3;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .add_new {
+    text-decoration: none;
+    color: black;
+    padding: 7px 15px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: #EDFFEC;
+    margin: 20px;
+    width: 40%;
+    text-align: center;
+    font-size: 19px;
+  }
+
+  /* add classification form */
+  #addClassificationForm {
+    width: 250px;
+    margin: 20px auto 50px;
+  }
+  #addClassificationForm fieldset {
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: #EDFFEC;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .add {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+  }
+  #add-classif {
+    width: 70%;
+    margin: 10px auto;
+  }
+  .add_info {
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    color: #69140E;
+  }
+  .addButton {
+    margin: 20px;
+    font-size: 15px;
+    width: 150px;
+    padding: 5px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px auto;
+  }
+
+  /* add vehicle form */
+  #addVehicleForm {
+    margin: 0 auto;
+  }
+  #addVehicleForm fieldset {
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: #EDFFEC;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+  .add {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+  }
+  #classification_id {
+    font-size: 17px;
+  }
+  .add input, #classification_id {
+    width: 210px;
+    margin: 10px auto;
+  }
+  .add textarea {
+    width: 210px;
+    margin: 0 auto;
+  }
+  .addButton {
+    margin: 20px;
+    font-size: 16px;
+    width: 180px;
+    padding: 5px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px auto;
+    font-weight: bold;
+  }
+  
 
   /* Footer */
   footer {
